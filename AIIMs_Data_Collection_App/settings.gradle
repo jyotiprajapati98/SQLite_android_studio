@@ -1,0 +1,2 @@
+rootProject.name = "Edata-Collection"
+include ':app'

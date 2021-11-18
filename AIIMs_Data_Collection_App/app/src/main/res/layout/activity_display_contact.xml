@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    xmlns:tools="http://schemas.android.com/tools"  
+    android:layout_width="match_parent"  
+    android:layout_height="match_parent">
+  
+  
+    <TextView  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"  
+        android:textAppearance="?android:attr/textAppearanceMedium"  
+        android:text="AIIMs Health Record"
+        android:id="@+id/textView"  
+        android:layout_gravity="center_horizontal"  
+        android:layout_centerHorizontal="true"  
+        android:layout_alignParentTop="true" />
+
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                        <TextView
+                            android:id="@+id/DisplayDate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:inputType="text" />
+
+                        <Button
+                            android:id="@+id/datebutton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:text="Select Date" />
+
+                        <EditText
+                            android:id="@+id/editTextGender"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="Gender"
+                            android:inputType="text" />
+
+                        <EditText
+                            android:id="@+id/editTextAge"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="Enter Age"
+                            android:inputType="number" />
+
+                        <EditText
+                            android:id="@+id/editTextHeight"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/editTextAge"
+                            android:ems="10"
+                            android:hint="Enter Height"
+                            android:inputType="number" />
+
+                        <EditText
+                            android:id="@+id/editTextWeight"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/editTextAge"
+                            android:ems="10"
+                            android:hint="Weight in KG"
+                            android:inputType="number" />
+
+                        <EditText
+                            android:id="@+id/editTextFoodType"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/editTextWeight"
+                            android:ems="10"
+                            android:hint="Enter Food type"
+                            android:inputType="text" />
+
+                        <EditText
+                            android:id="@+id/editTextHealthStatus"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/editTextFoodType"
+                            android:ems="10"
+                            android:hint="What is your health status"
+                            android:inputType="text" />
+
+                        <EditText
+                            android:id="@+id/editTextGeneticDisease"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/editTextHealthStatus"
+                            android:ems="10"
+                            android:hint="Did you have genetic diseases"
+                            android:inputType="text" />
+
+                        <EditText
+                            android:id="@+id/editTextAllergy"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/editTextGeneticDisease"
+                            android:ems="10"
+                            android:hint="allergy in eye or skin"
+                            android:inputType="text" />
+
+                        <EditText
+                            android:id="@+id/editTextCaste"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/editTextAllergy"
+                            android:ems="10"
+                            android:hint="Community/Caste"
+                            android:inputType="text" />
+
+                        <EditText
+                            android:id="@+id/editTextSugarLevel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/editTextCaste"
+                            android:ems="10"
+                            android:hint="Sugar Level"
+                            android:inputType="text" />
+
+                        <EditText
+                            android:id="@+id/editTextHBvalue"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/editTextSugarLevel"
+                            android:ems="10"
+                            android:hint="Hemoglobin level"
+                            android:inputType="text" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Front Eye image "
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/left_eye_image"
+                                    android:layout_width="50dp"
+                                    android:layout_height="40dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/eye" />
+
+                                <ImageView
+                                    android:id="@+id/right_eye_image"
+                                    android:layout_width="50dp"
+                                    android:layout_height="40dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/eye" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/eyeimagebutton_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                                <Button
+                                    android:id="@+id/leftEye_button"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp"
+                                    android:layout_weight="1"
+                                    android:backgroundTint="#BF4040"
+                                    android:padding="10dp"
+                                    android:text="Left Eye Image"
+                                    android:textColor="#FFFFFF" />
+
+                                <Button
+                                    android:id="@+id/rightEye_button"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp"
+                                    android:layout_weight="1"
+                                    android:backgroundTint="#BF4040"
+                                    android:padding="10dp"
+                                    android:text="Right Eye Image"
+                                    android:textColor="#FFFFFF" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Lower Eye image "
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/LowerLE_image"
+                                    android:layout_width="50dp"
+                                    android:layout_height="40dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/eye" />
+
+                                <ImageView
+                                    android:id="@+id/LowerRE_image"
+                                    android:layout_width="50dp"
+                                    android:layout_height="40dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/eye" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/LowerEyeImageButton_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                                <Button
+                                    android:id="@+id/LowerLeftEye_button"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp"
+                                    android:layout_weight="1"
+                                    android:backgroundTint="#BF4040"
+                                    android:padding="10dp"
+                                    android:text="Left Eye Image"
+                                    android:textColor="#FFFFFF" />
+
+                                <Button
+                                    android:id="@+id/LowerRightEye_button"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp"
+                                    android:layout_weight="1"
+                                    android:backgroundTint="#BF4040"
+                                    android:padding="10dp"
+                                    android:text="Right Eye Image"
+                                    android:textColor="#FFFFFF" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Upper Eye image "
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/UpperLE_image"
+                                    android:layout_width="50dp"
+                                    android:layout_height="40dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/eye" />
+
+                                <ImageView
+                                    android:id="@+id/UpperRE_image"
+                                    android:layout_width="50dp"
+                                    android:layout_height="40dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/eye" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/UpperEyeImageButton_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                                <Button
+                                    android:id="@+id/UpperLeftEye_button"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp"
+                                    android:layout_weight="1"
+                                    android:backgroundTint="#BF4040"
+                                    android:padding="10dp"
+                                    android:text="Left Eye Image"
+                                    android:textColor="#FFFFFF" />
+
+                                <Button
+                                    android:id="@+id/UpperRightEye_button"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp"
+                                    android:layout_weight="1"
+                                    android:backgroundTint="#BF4040"
+                                    android:padding="10dp"
+                                    android:text="Right Eye Image"
+                                    android:textColor="#FFFFFF" />
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/nailbed_image"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                             />
+
+                        <Button
+                            android:id="@+id/nailbed_image_button"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#BF4040"
+                            android:text="Click nailbed image"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Add CBC report images"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/CBCP1"
+                                    android:layout_width="50dp"
+                                    android:layout_height="40dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/doc" />
+
+                                <ImageView
+                                    android:id="@+id/CBCP2"
+                                    android:layout_width="50dp"
+                                    android:layout_height="40dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/doc" />
+
+                                <ImageView
+                                    android:id="@+id/CBCP3"
+                                    android:layout_width="50dp"
+                                    android:layout_height="40dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/doc" />
+
+                                <ImageView
+                                    android:id="@+id/CBCP4"
+                                    android:layout_width="50dp"
+                                    android:layout_height="40dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/doc" />
+
+                                <ImageView
+                                    android:id="@+id/CBCP5"
+                                    android:layout_width="50dp"
+                                    android:layout_height="40dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/doc" />
+
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/submit_button"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#BF4040"
+                            android:gravity="center"
+                            android:onClick="run"
+                            android:padding="10dp"
+                            android:text="save"
+                            android:textColor="#FFFFFF" />
+                </LinearLayout>
+        </ScrollView>
+
+</RelativeLayout>  
+
+
+        <!--
+
+        <EditText
+            android:id="@+id/editTextGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Gender"
+            android:inputType="text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/editTextAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter Age"
+            android:inputType="number"
+            app:layout_constraintBottom_toTopOf="@+id/editTextHeight"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <EditText
+            android:id="@+id/editTextHeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextAge"
+            android:ems="10"
+            android:hint="Enter Height in cm"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.126" />
+
+        <EditText
+            android:id="@+id/editTextWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextAge"
+            android:ems="10"
+            android:hint="Weight in KG"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.192" />
+
+        <EditText
+            android:id="@+id/editTextFoodType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextWeight"
+            android:ems="10"
+            android:hint="Enter Food type"
+            android:inputType="text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.258" />
+
+        <EditText
+            android:id="@+id/editTextHealthStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextFoodType"
+            android:ems="10"
+            android:hint="What is your health status"
+            android:inputType="text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.323" />
+
+        <EditText
+            android:id="@+id/editTextGeneticDisease"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextHealthStatus"
+            android:ems="10"
+            android:hint="Did you have genetic diseases"
+            android:inputType="text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.399" />
+
+
+        <LinearLayout
+            android:id="@+id/eyeimagebutton_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.609">
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/submit_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/eyeimagebutton_layout"
+            app:layout_constraintVertical_bias="0.0">
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextGeneticDisease"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:onClick="run"
+            android:padding="10dp"
+            android:text="save"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/nailbed_image_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Click nailbed image"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.896" />
+
+        <ImageView
+            android:id="@+id/nailbed_image"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.817"
+            app:srcCompat="@drawable/ic_baseline_pan_tool_24" />
+
+
+        <Button
+            android:id="@+id/leftEye_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="Left Eye Image"
+            app:layout_constraintBottom_toTopOf="@+id/nailbed_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/rightEye_button"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/left_eye_image" />
+
+        <Button
+            android:id="@+id/rightEye_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="Right Eye Image"
+            app:layout_constraintBottom_toTopOf="@+id/nailbed_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/leftEye_button"
+            app:layout_constraintTop_toBottomOf="@+id/right_eye_image" />
+
+        <ImageView
+            android:id="@+id/right_eye_image"
+            android:layout_width="163dp"
+            android:layout_height="123dp"
+            android:layout_weight="1"
+            app:layout_constraintBottom_toTopOf="@+id/rightEye_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/left_eye_image"
+            app:layout_constraintTop_toBottomOf="@+id/editTextGeneticDisease"
+            app:layout_constraintVertical_bias="0.527"
+            app:srcCompat="@drawable/eye" />
+
+        <ImageView
+            android:id="@+id/left_eye_image"
+            android:layout_width="162dp"
+            android:layout_height="123dp"
+            android:layout_weight="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/right_eye_image"
+            app:layout_constraintHorizontal_bias="0.483"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.541"
+            app:srcCompat="@drawable/eye" />
+            android:src="@drawable/ic_baseline_pan_tool_24"
+-->
